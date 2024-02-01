@@ -42,7 +42,7 @@ const audioLose = new Audio("/assets/audio/lose.mp3");
 function randomNum() {
   var prizeNum = Math.random() * 8;
   prizeNum = Math.floor(prizeNum);
-  console.log(prizeNum);
+  // console.log(prizeNum);
   return prizeNum;
 }
 
