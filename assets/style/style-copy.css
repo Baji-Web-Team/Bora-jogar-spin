@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: 'Montserrat' !important;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.hero-section {
+    background-image: url(/assets/img//webp-things-1/Background-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-position: contain; */
+    height: 100%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+    padding: 20px 0;
+}
+
+.hero-section .logo {
+    min-width: 204px;
+    /* max-height: 32px; */
+}
+
+.hero-section .logo .logo {
+    position: absolute;
+    top: 4%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section .bonus-text {
+    position: absolute;
+    top: 13.4%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    width: 395.999px;
+    height: 151.551px;
+}
+
+.hero-section .hero-wrapper {
+    position: absolute;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+
+
+.hero-section .hero-wrapper .image-left img {
+    /* width: 590.279px;
+    height: 932.888px; */
+    transform: rotate(10.692deg);
+    flex-shrink: 0;
+}
+
+.hero-section .hero-wrapper .image-wheel {
+    z-index: 1;
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+
+.hero-section .hero-wrapper .image-wheel .mainbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+.hero-wrapper .mainbox .roullet-content {
+    z-index: 1;
+}
+
+.hero-section .hero-wrapper .image-wheel .mainbox .box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    /* top: 0;
+    left: 0;
+    right: 0; */
+    /* transform: translate(50%, 50%); */
+}
+
+.hero-section .hero-wrapper .image-wheel .mainbox .box .box1 {
+    z-index: 100;
+}
+
+.hero-section .hero-wrapper .image-wheel .mainbox .button-spin {
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+    width: 113.573px;
+    height: 113.573px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+    z-index: 21;
+}
+
+
+.button-spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    background-color: transparent;
+    border: none;
+    z-index: 21;
+}
+
+
+/* roullet */
+
+.image-wheel .roullet-wheel {
+    z-index: 11;
+    position: relative;
+
+}
+
+.image-wheel .roullet {
+    position: absolute;
+    z-index: 2;
+}
+
+/* roullet end */
+
+
+.overlay {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.modal-wrapper {
+    visibility: hidden;
+    display: none;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(1px);
+    display: grid;
+    place-items: center;
+    z-index: 9999;
+    color: #fff;
+    background-image: url(/assets/img/webp-things-1/modal-contetn.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+/* .modal-wrapper .modal-contents {
+    max-width: 701px;
+} */
+
+.modal-wrapper .modal-contents h1 {
+    font-size: 64px !important;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #B79114;
+    text-align: center;
+    max-width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.modal-wrapper .modal-contents h2 {
+    font-size: 24px;
+    text-shadow: none;
+
+}
+
+
+
+.spin {
+    animation: spin 15s infinite;
+
+}
+
+/* .modal-contents {
+    height: 37%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+} */
+
+.modal-contents {
+    height: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pop-up-para {
+    text-align: center;
+}
+
+.modal-title-desc {
+    font-size: 16px;
+}
+
+
+
+#congrats-btn {
+    background: rgb(252, 202, 40);
+    background: linear-gradient(180deg, rgba(252, 202, 40, 1) 0%, rgba(113, 86, 0, 1) 100%);
+    color: #000000;
+    min-width: 60%;
+    min-height: 60px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    margin: auto;
+    display: block;
+}
+
+.pop-up-para {
+    
+    max-width: 97%;
+    display: block;
+    margin: auto;
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(3600deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+
+    .hero-container .hero-wrapper .image-wheel .roullet-wheel {
+        width: 80%;
+    }
+
+
+}
+
+@media only screen and (max-width:768px) {
+    .hero-wrapper .image-left {
+        display: none;
+    }
+
+    .hero-wrapper .image-right {
+        display: none;
+    }
+
+    .hero-section .hero-wrapper .image-wheel {
+
+        max-width: 100%;
+        margin: 0;
+    }
+}
+
+
+@media only screen and (max-width:425px) {
+    .hero-section {
+        padding: 0;
+    }
+
+    .hero-section .hero-wrapper {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-section .logo {
+        width: 204px;
+        min-height: 32px;
+        flex-shrink: 0;
+    }
+
+    .hero-section .logo .logo {
+        top: 8%;
+    }
+
+    .hero-section .bonus-text {
+        width: 254.986px;
+        /* height: 100%; */
+        /* height: 97.585px; */
+    }
+
+    .hero-wrapper .image-wheel {
+        max-width: 100%;
+        min-height: 291.056px;
+        margin-top: 40px;
+
+    }
+
+    .hero-section .hero-wrapper .image-wheel .mainbox .button-spin {
+        background-color: transparent;
+        border-radius: 50%;
+        border: none;
+        min-width: 73.573px;
+        min-height: 73.573px;
+        color: #fff;
+        font-weight: 700;
+        font-size: 17px;
+    }
+
+    .hero-wrapper .image-left,
+    .hero-wrapper .image-right {
+        display: none;
+    }
+
+    .image-wheel .roullet-wheel {
+        max-width: 100%;
+    }
+
+
+    .hero-wrapper .mainbox .roullet-content {
+        max-height: 70%;
+    }
+
+    .hero-section .hero-wrapper .image-wheel {
+        max-width: 90%;
+    }
+
+    .button-spin-wrapper .button-spin img {
+        max-width: 68%;
+    }
+
+    .hero-wrapper .image-left {
+        display: block;
+        position: absolute;
+        /* top: 0; */
+        /* left: 60%; */
+        right: 0;
+        max-width: 100%;
+        /* bottom: -7%; */
+        /* float: right !important; */
+        transform: translate(48%, 80%);
+
+        max-width: 100%;
+        z-index: 2;
+    }
+
+    .hero-wrapper .image-left img {
+        max-width: 60%;
+    }
+
+    .hero-wrapper .image-right {
+        display: block;
+        position: absolute;
+        right: 0;
+        left: -10%;
+        bottom: -7%;
+        z-index: 1;
+    }
+
+    .hero-wrapper .image-right img {
+        max-width: 60%;
+    }
+
+    .modal-contents {
+        max-width: 100%;
+        margin: 0 auto;
+        /* height: 100%; */
+    }
+
+    .pop-up-para {
+        max-width: 76%;
+        margin: 0 auto;
+    }
+
+    #congrats-btn {
+        min-width: 60%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .modal-wrapper .modal-contents h2 {
+        font-size: 17px;
+        text-shadow: none;
+    }
+
+    .modal-title-desc {
+        font-size: 12px;
+        margin: 10px 0;
+    }
+
+    .wheel-text2 {
+        font-size: 12px;
+    }
+
+    .modal-wrapper .modal-contents h1 {
+
+        font-size: 45px !important;
+    }
+
+}
